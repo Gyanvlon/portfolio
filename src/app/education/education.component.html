@@ -1,0 +1,55 @@
+<section id="educations">
+    <div class="content-box">
+    <p> <i class="fas fa-graduation-cap"></i> Education</p>
+    <hr class="custom-hr">
+    <div class="education-container">
+        @for(education of educations; track education){
+            <div class="education-item">
+                <div class="education-details">
+                    <div class="education-degree">
+                        <i class="fas fa-graduation-cap education-icon"></i>
+                        {{education.degree}}
+                    </div>
+                    <div class="education-date">
+                        <i class="fas fa-calendar-alt education-icon"></i>
+                        {{education.date}}
+                    </div>
+                    <div class="education-institution">
+                        <a href={{education.web}} target="_blank" class="text-white icon-link">
+                        <i class="fas fa-school education-icon"></i>
+                        {{education.institution}}
+                        </a>
+                    </div>
+                    <div class="education-gpa">
+                        <i class="fas fa-star education-icon"></i>
+                        GPA: {{education.gpa}}
+                    </div>
+                    <div class="education-location">
+                        <a href={{education.map}} target="_blank" class="text-white icon-link">
+                        <i class="fas fa-map-marker-alt education-icon"></i>
+                        {{education.location}}
+                     </a>
+                    </div>
+                </div>
+            </div>
+        }@empty {
+            <div class="education-item">No education available</div>
+        }
+    </div>
+
+    <p><i class="fas fa-chart-line"></i>Professional Development</p>
+    <hr class="custom-hr">
+    <div class="pd-container">
+        @for(pd of professionalDevelopment; track pd){
+            <div class="pd-item">
+                <i class="fas fa-certificate pd-icon"></i>
+                <div class="pd-title">{{pd.title}}</div>
+                <div class="pd-url"><a href="{{pd.url}}" target="_blank">View Certificate</a></div>
+            </div>
+        }@empty {
+            <div class="pd-item">No Professional Development available</div>
+        }
+    </div>
+ </div>
+</section>
+<app-contact></app-contact>

@@ -1,0 +1,25 @@
+<section id="intro" class="intro d-flex flex-column justify-content-center align-items-center p-2 position-relative">
+  <div class="content-box">
+  <div class="text-center z-index-1 ">
+      <h1 class="title text-white animate-fade-in">  <i class="fas fa-info-circle"></i> Introduction</h1>
+       <h3 class="subtitle text-highlight animate-slide-up"> <i class="fas fa-clipboard-list"> </i>Professional Summary</h3>
+      <hr class="custom-hr">
+      <p class="summary text-white mb-4 text-left animate-fade-in">{{ intro.overview }}</p>
+      <h2 class="text-white mb-4">
+          <i class="fas fa-check-circle"></i> Professional Expertise</h2>
+      <hr class="custom-hr">
+      <ul class="list-unstyled d-flex flex-wrap justify-content-center animate-list expertise-list">
+          @for (expertise of professionalExpertise.professionalExpertise; track expertise) {
+            <li class="expertise-item mx-3 d-flex align-items-center animate-item">
+              <i class="fas fa-check-circle me-2"></i>
+              <span class="expertise-text">{{ expertise }}</span>
+          </li>
+          } @empty {
+              <li class="text-white">There are no items.</li>
+          }
+      </ul>
+  </div>
+  <div class="background-shape"></div>
+</div>
+</section>
+<app-skills></app-skills>

@@ -1,0 +1,65 @@
+<section id="contact">
+  <div class="content-box">
+  <p><i class="fas fa-envelope"></i>  Contact Me</p>
+  <hr class="custom-hr">
+  <div class="form-container">
+  <form [formGroup]="contactForm" class="contact-form">
+    <div> <i class="fas fa-user form-icon"></i> Name: </div>
+    <div class="form-group">
+      <input type="text" id="name" formControlName="name" name="name" required>
+    </div>
+    @if(contactForm.controls["name"].touched &&  contactForm.controls["name"].errors?.["required"]){
+      <div class="error">Name is required</div>
+    }
+    <div><i class="fas fa-envelope form-icon"></i>Email ID: </div>
+    <div class="form-group">
+      <label for="email"></label>
+      <input type="email" formControlName="email" id="email" name="email" required>
+    </div>
+    @if(contactForm.controls["email"].touched &&  contactForm.controls["email"].errors?.["required"]){
+      <div class="error">Email is required</div>
+    }
+    @else if(contactForm.controls["email"].touched &&  contactForm.controls["email"].errors?.["email"]){
+      <div class="error">Email is invalid</div>
+    }
+    <div> <i class="fas fa-phone-alt form-icon"> </i>Contact Number: </div>
+    <div class="form-group">
+      <input type="number" formControlName="contact" id="contact-number" name="contact-number" required>
+    </div>
+    @if(contactForm.controls["contact"].touched &&  contactForm.controls["contact"].errors?.["required"]){
+      <div class="error">Contact Number is required</div>
+    }
+    <div> <i class="fas fa-tag form-icon"></i>Topic: </div>
+    <div class="form-group">
+      <input type="text" formControlName="topic" id="topic" name="topic" required>
+    </div>
+    @if(contactForm.controls["topic"].touched &&  contactForm.controls["topic"].errors?.["required"]){
+      <div class="error">Topic is required</div>
+    }
+    <div> <i class="fas fa-pencil-alt form-icon"></i> Message: </div>
+    <div class="form-group">
+      <textarea id="message" formControlName="message" name="message" rows="6" required></textarea>
+    </div>
+    @if(contactForm.controls["message"].touched &&  contactForm.controls["message"].errors?.["required"]){
+      <div class="error">Message is required</div>
+    }
+    @if(isMessageSent){
+      <div class="message-response"> <i class="fas fa-check-circle me-2"></i>Message send Successfully</div>
+    }
+    <button type="button" class="btn btn-success" [disabled]="contactForm.invalid" (click)="send()" >Send Message</button>
+  </form>
+</div>
+  <div class="social-location-container d-flex justify-content-center align-items-center text-white">
+    <p class="m-2"><a href="https://www.linkedin.com/in/gyan-bahadur-tamang-195a6397/" target="_blank" class="text-white icon-link"><i class="fab fa-linkedin form-icon"></i></a></p>
+    <p class="m-2"><a href="https://github.com/gyanvlon" target="_blank" class="text-white icon-link"><i class="fab fa-github form-icon"></i></a></p>
+    <p class="m-2"><a href="http://maps.google.com/maps?&z=15&mrt=loc&t=k&q=40.770566+-73.828456" target="_blank" class="text-white icon-link"><i class="fas fa-map-marker-alt form-icon"></i></a></p>
+    <p class="m-2"><a href="Java Full-Stck Developer.docx" download="Java Full-Stck Developer.docx" class="text-white icon-link"><i class="fas fa-download form-icon"></i></a></p>
+  </div>
+  <p class="m-2">
+    Thank You <i class="fas fa-thumbs-up form-icon" aria-hidden="true"></i> 
+</p>
+<p>
+    Have a Good Day <i class="fas fa-sun form-icon" aria-hidden="true"></i>
+</p>
+</div>
+</section>

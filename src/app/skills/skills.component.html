@@ -1,0 +1,182 @@
+<section id="skills" class="skills">
+  <div class="content-box">
+  <div class="skills-title">
+    <h1 > <i class="fas fa-laptop-code"></i> Technical Skills</h1>
+    <hr class="custom-hr">
+  </div>
+  @if (skills) {
+    <div class="skills-group">
+      <ul>
+        <div>
+          <p class="me-2"><i class="fas fa-code ms-2 me-2"></i> Language</p>
+        </div>
+        @for(skill of skills.languages; track skill){
+          <li><i class="fas fa-laptop-code"></i> {{skill}}</li>
+        }@empty {
+          <li>No language available</li>
+        }
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <ul>
+        <div>
+          <p class="me-2"><i class="fas fa-globe ms-2 me-2"></i> Web Development</p>
+        </div>
+        @for(skill of skills.web; track skill){
+          <li><i class="fas fa-globe"></i> {{skill}}</li>
+        }@empty {
+          <li>No Web skill available</li>
+        }
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <ul>
+        <div>
+          <p class="me-2"><i class="fas fa-server ms-2 me-2"></i> Web Services</p>
+        </div>
+        @for(skill of skills.web_services; track skill){
+          <li><i class="fas fa-network-wired"></i> {{skill}}</li>
+        }@empty {
+          <li>No Web Service skill available</li>
+        }
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <ul>
+        <div>
+          <p class="me-2"><i class="fas fa-cubes ms-2 me-2"></i> Frameworks</p>
+        </div>
+        @for(skill of skills.frameworks; track skill){
+          <li><i class="fas fa-cube"></i> {{skill}}</li>
+        }@empty {
+          <li>No frameworks skill available</li>
+        }
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <ul>
+        <div>
+          <p class="me-2"><i class="fas fa-paint-brush ms-2 me-2"></i> Design Approach</p>
+        </div>
+        @for(skill of skills.design_approach; track skill){
+          <li><i class="fas fa-palette"></i> {{skill}}</li>
+        }@empty {
+          <li>No design approach skill available</li>
+        }
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <ul>
+        <div>
+          <p class="me-2"><i class="fas fa-database ms-2 me-2"></i> Databases</p>
+        </div>
+        @for(skill of skills.databases; track skill){
+          <li><i class="fas fa-database"></i> {{skill}}</li>
+        }@empty {
+          <li>No databases skill available</li>
+        }
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <ul>
+        <div>
+          <p class="me-2"><i class="fas fa-envelope ms-2 me-2"></i> Messaging</p>
+        </div>
+        @for(skill of skills.messaging; track skill){
+          <li><i class="fas fa-comments"></i> {{skill}}</li>
+        }@empty {
+          <li>No messaging skill available</li>
+        }
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <ul>
+        <div>
+          <p class="me-2"><i class="fas fa-vial ms-2 me-2"></i> Testing Frameworks</p>
+        </div>
+        @for(skill of skills.testing_frameworks; track skill){
+          <li><i class="fas fa-bug"></i> {{skill}}</li>
+        }@empty {
+          <li>No testing frameworks skill available</li>
+        }
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <ul>
+        <div>
+          <p class="me-2"><i class="fas fa-box ms-2 me-2"></i> Containerization</p>
+        </div>
+        @for(skill of skills.containerization; track skill){
+          <li><i class="fas fa-box-open"></i> {{skill}}</li>
+        }@empty {
+          <li>No containerization skill available</li>
+        }
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <ul>
+        <div>
+          <p class="me-2"><i class="fas fa-tools ms-2 me-2"></i> Tools</p>
+        </div>
+        @for(skill of skills.tools; track skill){
+          <li><i class="fas fa-wrench"></i> {{skill}}</li>
+        }@empty {
+          <li>No tools skill available</li>
+        }
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <ul>
+        <div>
+          <p class="me-2"><i class="fas fa-sitemap ms-2 me-2"></i> Development Methodologies</p>
+        </div>
+        @for(skill of skills.development_methodologies; track skill){
+          <li><i class="fas fa-project-diagram"></i> {{skill}}</li>
+        }@empty {
+          <li>No development methodologies skill available</li>
+        }
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <ul>
+        <div>
+          <p class="me-2"><i class="fas fa-cloud ms-2 me-2"></i> Cloud Technologies</p>
+        </div>
+        @for(skill of skills.cloud_technologies; track skill){
+          <li><i class="fas fa-cloud-upload-alt"></i> {{skill}}</li>
+        }@empty {
+          <li>No cloud technologies skill available</li>
+        }
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <ul>
+        <div>
+          <p class="me-2"><i class="fas fa-desktop ms-2 me-2"></i> Operating Systems & Platforms</p>
+        </div>
+        @for(skill of skills.operating_systems_platforms; track skill){
+          <li><i class="fas fa-desktop"></i> {{skill}}</li>
+        }@empty {
+          <li>No operating systems platforms skill available</li>
+        }
+      </ul>
+    </div>
+  } @else {
+    <p>There are no skills.</p>
+  }
+</div>
+</section>
+
+<app-projects></app-projects>

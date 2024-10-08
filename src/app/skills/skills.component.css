@@ -1,0 +1,139 @@
+.skills {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.content-box {
+    border: 2px solid #adaaaa; 
+    border-radius: 10px;
+    padding: 5px; 
+    margin: 5px; 
+    width: 99%; 
+    max-width: auto;
+    box-sizing: border-box; 
+}
+.skills-title {
+    text-align: center !important;
+    width: 100%;
+    margin: 0;
+    font-size: 2.5em;
+}
+.skills-group {
+    margin: 0.5em 0;
+    width: 100%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.skills-group p {
+    font-size: 1.1em;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #00ff7f;
+}
+
+.skills-group ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.skills-group li {
+    margin: 3px;
+    padding: 6px 12px;
+    background-color: #444;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.skills-group li i {
+    margin-right: 6px;
+    color: #00ff7f;
+}
+
+@media (max-width: 1200px) {
+    .skills h1 {
+        font-size: 2.2em;
+    }
+
+    .skills-group p {
+        font-size: 1em;
+    }
+
+    .skills-group li {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 992px) {
+    .skills h1 {
+        font-size: 2em;
+    }
+
+    .skills-group p {
+        font-size: 0.95em;
+    }
+
+    .skills-group li {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills h1 {
+        font-size: 1.8em;
+    }
+
+    .skills-group p {
+        font-size: 0.9em;
+    }
+
+    .skills-group li {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills h1 {
+        font-size: 1.5em;
+    }
+
+    .skills-group p {
+        font-size: 0.8em;
+    }
+
+    .skills-group li {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 400px) {
+    .skills h1 {
+        font-size: 1.3em;
+    }
+
+    .skills-group p {
+        font-size: 0.7em;
+    }
+
+    .skills-group li {
+        font-size: 0.65em;
+    }
+}

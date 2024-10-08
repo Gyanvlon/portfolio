@@ -1,0 +1,44 @@
+<section id="projects">
+<div class="content-box">
+    <p> <i class="fas fa-project-diagram"></i> Projects</p>
+    <hr class="custom-hr">
+    <div class="timeline">
+        @for(project of projects; track project) {
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="project-title">
+                        <a href={{project.web}} target="_blank"> <i class="fas fa-building timeline-icon"></i> {{project.company}} </a>
+                    </div>
+                    <div><a href={{project.map}} target="_blank" class="text-white icon-link">
+                         <i class="fas fa-map-marker-alt timeline-icon"></i> </a>{{project.location}}
+                    </div>
+                    <div class="project-title">
+                        <i class="fas fa-handshake timeline-icon"></i> Client: {{project.project}}
+                    </div>
+                    <div>
+                        <i class="fas fa-calendar-alt timeline-icon"></i> {{project.dates}}
+                    </div>
+                    <div class="project-role">
+                        <i class="fas fa-user-tie timeline-icon"></i> {{project.role}}
+                    </div>
+                    <!-- <div class="project-responsibilities project-link" data-bs-toggle="modal" data-bs-target="#viewModal" (click)="openModal(project)">
+                        <i class="fas fa-tasks timeline-icon"></i> View Achievement & Responsibilities
+                    </div> -->
+                    <a href={{project.link}} class="project-link" target="_blank">
+                        <i class="fas fa-link"></i> View Project
+                    </a>
+                </div>
+            </div>  
+        } @empty {
+            <div class="timeline-item">
+                <div class="timeline-marker">No Projects</div>
+                <div class="timeline-content">
+                    <i class="fas fa-exclamation-circle timeline-icon"></i>
+                    <div>Project is not available</div>
+                </div>
+            </div>
+        }
+    </div>
+  </div>
+</section>
+<app-education></app-education>
