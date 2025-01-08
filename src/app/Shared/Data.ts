@@ -9,13 +9,13 @@
     },
     "position": "Software Developer",
     "availability": "Available for full-time, W2 employment",
-    "summary": "Experienced Full Stack Developer with over 5+ years of comprehensive experience in the Software Development, specializing in the design and development of highly scalable and robust enterprise solutions. Expertise in collaborating with cross-functional teams to deliver high-performance applications that align with business objectives. Known for team player with attention to detail, excellent interpersonal skills, communication skills, and problem-solving skills.",
+    "summary": "Experienced Full Stack Developer with over 6+ years of comprehensive experience in the Software Development, specializing in the design and development of highly scalable and robust enterprise solutions. Expertise in collaborating with cross-functional teams to deliver high-performance applications that align with business objectives. Known for team player with attention to detail, excellent interpersonal skills, communication skills, and problem-solving skills.",
     "professional_expertise": [
       "Enterprise Application",
       "Single Page Web Application",
       "Web Development",
       "System Design and Integration",
-      "Micro-services",
+      "Microservices",
       "SOA",
       "Unit and Integration Testing",
       "User Interface",
@@ -30,19 +30,19 @@
       "ACID Properties"
     ],
     "technical_skills": {
-      "languages": ["Java", "JavaScript/TypeScript", "SQL"],
+      "languages": ["Java", "TypeScript", "SQL"],
       "web": ["HTML5", "CSS3", "XML", "DOM", "jQuery", "Ajax", "Bootstrap", "JavaScript", "ES6"],
       "web_services": ["RESTful services", "GraphQL", "Micro-services", "Web Services", "JSON", "SOAP"],
-      "frameworks": ["Angular version (6-18)", "React", "Spring", "Spring Boot", "Spring Cloud", "Spring Security", "Hibernate"],
+      "frameworks": ["Angular version (6-19)", "React", "Spring", "Spring Boot", "Spring Cloud", "Spring Security", "Hibernate"],
       "design_approach": ["Test Driven Development (TDD)", "Event Driven Development (EDD)", "Domain-Driven Design (DDD)"],
       "databases": ["RDMS", "NoSQL", "SQL- Oracle", "MySQL", "PostgreSQL", "Redis", "DynamoDB"],
-      "testing_frameworks": ["JUnit", "Mockito", "Jest", "Jasmine"],
+      "testing_frameworks": ["JUnit", "Mockito", "JMeter", "Jasmine"],
       "messaging": ["JMS", "Kafka", "RabbitMQ"],
       "containerization": ["Docker", "Kubernetes"],
-      "design_patterns": ["Singleton", "Prototype", "Observer", "Facade", "Factory", "SOA", "DAO", "MVC"],
-      "tools": ["Git", "Jira", "JBoss", "Apache/Tomcat", "Maven", "CI/CD pipeline with Jenkins", "IntelliJ", "VS Code", "pgAdmin4", "Postman"],
+      "design_patterns": ["Singleton", "Prototype", "Observer", "Facade", "Factory", "DAO", "MVC"],
+      "tools": ["GitHub Actions", "Jira", "Gradle", "Apache Tomcat", "Maven", "Jenkins", "SonarQube", "Grafana", "Prometheus", "IntelliJ", "VS Code", "Postman"],
       "development_methodologies": ["Agile/Scrum"],
-      "cloud_technologies": ["Azure", "AWS (Elastic Beanstalk)", "Elastic Search", "EC2", "RDS", "SNS", "SQS", "IAM", "Lambda", "S3", "CloudFront"],
+      "cloud_technologies": ["Azure", "AWS", "(ECS", "EC2", "RDS", "SNS", "SQS", "IAM", "Lambda", "S3", "CloudFront)"],
       "operating_systems_platforms": ["Unix", "Linux - Ubuntu", "Windows"]
     },
     "professional_experience": [
@@ -54,7 +54,7 @@
         "dates": "Jul 2019 - Aug 2023",
         "project": ["DHIS2", "OpenMRS"],
         "link":"https://dhis2.org/",
-        "role": "Software Developer",
+        "role": "Software Developer-(Full Stack)",
         "responsibilities": [
           "Collaborated with cross-functional teams to gather and analyze business and functional requirements, ensuring alignment with project features, goals and delivering solutions that met stakeholder needs and improved overall project outcomes.",
           "Developed and maintained open source DHIS2 software, the world’s largest Health Information Management System (HIMS), utilized by over 128 countries to manage and analyze health information, enhancing global health data management capabilities.",
@@ -79,7 +79,7 @@
         "dates": "Jan 2019 - Jul 2019",
         "project": "Bevvi",
         "link":"https://www.getbevvi.com/",
-        "role": "Front-End Developer",
+        "role": "Java Software Developer",
         "responsibilities": [
           "Developed the Bevvi e-commerce web application in collaboration with cross-functional teams, enhancing user engagement and functionality.",
           "Designed a responsive user interface (UI) for the Bevvi application, increasing mobile traffic by 25% and improving user satisfaction.",
@@ -101,6 +101,28 @@
         "project": "Tenderaa",
         "link":"https://tenderaa.com/",
         "role": "Java Developer (Back-End)",
+        "responsibilities": [
+          "Built RESTful APIs for the Tenderaa e-commerce application, which contributed to attracting 3 additional clients and expanding the customer value.",
+          "Designed and implemented the business layer in collaboration with Project Manager, achieving a 25% improvement in modularity and facilitating loose coupling of business components across application layers.",
+          "Implemented automated testing for both Unit test and Integration testing with a reactive approach to API design, resulting in an 18% improvement in application performance and enhanced responsiveness.",
+          "Collaborated with front-end developers to integrate APIs seamlessly into web application, ensuring a smooth and cohesive user experience.",
+          "Ensured application performance, security, and user-friendliness in multi-threaded environment, maintaining a 99.9% uptime and securing sensitive data against vulnerabilities.",
+          "Participated in source code review and enhancement processes, improving code quality and contributing to the overall robustness of the application.",
+          "Collaborated with DevOps Team and provided Technical Support."
+        ],
+        "technologies_used": [
+          "Java", "JVM", "Spring Boot", "Spring Cloud", "Hibernate", "Microservices", "Functional Programming", "JWT", "Stream API", "Collection framework", "OAuth 2.0", "ActiveMQ", "Apache Kafka", "JMS", "Java Beans", "JDBC", "JUnit", "Mockito", "PostgreSQL", "OpenAPI", "Swagger UI", "Scrum", "Docker", "CI/CD with Jenkins", "Redis", "AWS", "Version Control", "Git", "Confluence"
+        ]
+      },
+      {
+        "company": "Softwizz",
+        "web":"https://softwizz.in/",
+        "map":"https://www.google.com/maps/place/Softwizz+Pvt.+Ltd./@30.211569,74.95231,1532m/data=!3m1!1e3!4m6!3m5!1s0x391732a43c41eed7:0xf1bc9286b47f5ea9!8m2!3d30.2115693!4d74.9523097!16s%2Fg%2F11b8t6vww1?hl=en&entry=ttu&g_ep=EgoyMDI1MDEwNi4xIKXMDSoASAFQAw%3D%3D",
+        "location": "Bathinda, India",
+        "dates": "May 2017 – Aug 2017",
+        "project": "Big Mart",
+        "link":"https://bigmartfranchise.com/",
+        "role": "Java Developer (Internship)",
         "responsibilities": [
           "Built RESTful APIs for the Tenderaa e-commerce application, which contributed to attracting 3 additional clients and expanding the customer value.",
           "Designed and implemented the business layer in collaboration with Project Manager, achieving a 25% improvement in modularity and facilitating loose coupling of business components across application layers.",
@@ -157,7 +179,11 @@
     ],
     "professional_development": [
       {
-        "title": "Front-End JavaScript Frameworks: Angular",
+        "title": "Algorithmic Toolbox from University of California San Diego",
+        "url": "https://www.coursera.org/account/accomplishments/verify/PRFAW9OY5LNN"
+      },
+      {
+        "title": "Front-End JavaScript Frameworks: Angular from The Hong Kong University of Science and Technology",
         "url": "https://www.coursera.org/account/accomplishments/verify/VAJ5UHNCRRRC"
       },
       {
